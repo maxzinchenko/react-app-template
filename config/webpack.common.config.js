@@ -41,7 +41,7 @@ module.exports = merge([{
       }
     }, {
       test: /\.svg$/,
-      use: ['@svgr/config', 'url-loader']
+      use: ['@svgr/webpack', 'url-loader']
     }]
   },
   plugins: [
