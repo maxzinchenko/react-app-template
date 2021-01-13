@@ -4,6 +4,14 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const Dotenv = require('dotenv-webpack');
 
 module.exports = merge([{
+  resolve: {
+    alias: {
+      '@Modules': path.resolve(__dirname, '..', 'src', 'modules'),
+      '@Components': path.resolve(__dirname, '..', 'src', 'components'),
+      '@Hooks': path.resolve(__dirname, '..', 'src', 'hooks'),
+      '@Services': path.resolve(__dirname, '..', 'src', 'services')
+    }
+  },
   module: {
     rules: [{
       test: /\.js$|jsx$/,
