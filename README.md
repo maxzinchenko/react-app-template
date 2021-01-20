@@ -1,4 +1,4 @@
-# React boilerplate
+# React boilerplate JS
 
 ## Packages installation
 
